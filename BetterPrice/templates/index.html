@@ -1,0 +1,23 @@
+{% extends "menu.html" %}
+{% block content %}
+    <h1>Better Price</h1>
+
+      <form action="" method="POST">
+        <div class="form-group">
+            <label>Email a ser notificado:</label>
+            <input type="email" name="email" class="form-control" required>
+          </div>
+    <div class="form-group">
+          <label>Url do Produto:</label>
+          <input type="text" name="produto_url" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label>Minimo Preço:</label>
+          <input type="text" name="min_preco" class="form-control" required>
+        </div>
+        <input type="submit" class="btn btn-info" value="Start">
+                    <a href="/credits"><button type="button" class="btn btn-dark">Help</button></a>
+    
+      </form>
+
+{% endblock content %}
